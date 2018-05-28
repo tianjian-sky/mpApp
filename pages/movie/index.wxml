@@ -1,0 +1,17 @@
+<View>
+  <View class="topToolbar">
+    <text class="pageTitle">电影</text>
+  </View>
+
+  <View class="tabBar">
+    <rich-text class="tabBarItem {{subTabIndex === index ?'active':''}}" wx:for="{{subTabs}}" bindtap="changeTab" data-tabIndex="{{index}}">
+      {{item.title}}
+    </rich-text>  
+  </View>
+  <View class="mainViewContainer">
+    <View class="mainViewInner" data-curViewIndex="{{subTabIndex}}">
+       <scroll-view class="subTabView" wx:for="{{subTabs}}" data-viewIndex="{{index}}" wx:>
+      </scroll-view>
+    </View>
+  </View>
+</View>

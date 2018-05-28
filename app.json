@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/discover/index",
     "pages/movie/index",
+    "pages/discover/index",
     "pages/my/index",
     "pages/classic/index",
-    "pages/cinema/index"
+    "pages/cinema/index",
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundColor": "#eeeeee",

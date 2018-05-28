@@ -1,6 +1,8 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (path, query, scene, shareTicket, referrerInfo) {
+    console.log(this) // app instance
+    console.log(path, query, scene, shareTicket, referrerInfo)
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -35,5 +37,8 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  onTabItemTap: (e) => {
+    console.log(e)
   }
 })
