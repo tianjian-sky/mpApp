@@ -1,0 +1,10 @@
+<view>
+  <view class="poster"></view>
+  <rich-text class="title">{{movieInfo.title}}</rich-text>
+  <view class="rating">
+    <view class="stars">
+      <view class="mask"></view>
+    </view>
+    <rich-text class="score">{{movieInfo.rating.average}}</rich-text>
+  </view>
+</view>

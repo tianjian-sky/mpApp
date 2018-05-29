@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "movieCard": "../../components/movieCard/movieCard"
+  }
+}
