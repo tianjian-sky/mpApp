@@ -1,6 +1,6 @@
-<View>
+<View class="page">
   <text>豆瓣电影Top250</text>
-  <scroll-view>
-    <movieCard wx:for="{{top250Movies}}" data-index="{{index}}" movieInfo="{{item}}"></movieCard>
+  <scroll-view class="listView">
+    <movieCard class="movieCard g{{index % 3 + 1}}" wx:for="{{top250Movies}}" data-index="{{index}}" movieInfo="{{item}}"></movieCard>
   </scroll-view>
 </View>

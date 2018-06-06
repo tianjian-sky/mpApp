@@ -1,0 +1,22 @@
+.page{
+  height: 100%;
+}
+.listView{
+  display: grid;
+  grid-template-columns: 2.5vw auto 2.5vw auto 2.5vw auto 2.5vw;
+}
+.movieCard{
+  position: relative;
+}
+.movieCard.g1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.movieCard.g2{
+ grid-column-start: 4;
+  grid-column-end: 5;
+}
+.movieCard.g3{
+ grid-column-start: 6;
+  grid-column-end: 7;
+}

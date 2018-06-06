@@ -1,5 +1,4 @@
-<view>
-  <view class="poster"></view>
+  <view class="poster" style="background:url({{movieInfo.images.large}}) center no-repeat;background-size:100% 100%;"></view>
   <rich-text class="title">{{movieInfo.title}}</rich-text>
   <view class="rating">
     <view class="stars">
@@ -7,4 +6,3 @@
     </view>
     <rich-text class="score">{{movieInfo.rating.average}}</rich-text>
   </view>
-</view>

@@ -1,3 +1,5 @@
+const app = getApp()
+
 Page({
   data: {
     text: "电影",
@@ -18,6 +20,7 @@ Page({
     this.setData({"subTabIndex": dataSet.tabindex})
   },
   onLoad: function (options) {
+    console.log('app:', app)
     // Do some initialize when page load.
   },
   onReady: function () {

@@ -38,6 +38,15 @@ App({
   globalData: {
     userInfo: null
   },
+  env: 'dev',
+  globalConfig: {
+    "dev": {
+      API_BASE: 'https://zmrjplek.qcloud.la'
+    },
+    "pro": {
+      API_BASE: 'https://zmrjplek.qcloud.la'
+    }
+  },
   onTabItemTap: (e) => {
     console.log(e)
   }

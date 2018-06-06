@@ -1,7 +1,9 @@
-function getList (cb1, cb2) {
-  let url = 'https://api.douban.com/v2/movie/top250'
-  wx.request({
-    url: url,
+import HttpRequest from '../../utils/http.js'
+console.log(HttpRequest)
+function getList (cb1,cb2) {
+console.log('---')
+  HttpRequest.http.requestDouban({
+    url: 'movie/top250',
     method: 'GET',
     success: function (res) {
       cb1(res)
